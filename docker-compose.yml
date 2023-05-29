@@ -19,7 +19,6 @@ services:
     volumes:
       - ./front:/front
       - /front/node_modules
-      - ./front/dist:/front/dist
     working_dir: /front
     env_file:
       - .env

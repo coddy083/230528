@@ -6,7 +6,12 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: "http://49.247.35.9",
+    credentials: true,
+  }
+));
 
 dotenv.config();
 

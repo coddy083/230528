@@ -22,6 +22,7 @@ services:
     working_dir: /front
     env_file:
       - .env
+    stdin_open: true
     restart: always
 
   nginx:

@@ -7,7 +7,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   const { data: gong9s, isLoading } = useQuery("gong9s", () =>
-    fetch("http://localhost:5900/api/users").then((res) => res.json())
+    fetch("/api/users").then((res) => res.json())
   );
 
   useEffect(() => {

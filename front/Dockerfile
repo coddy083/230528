@@ -9,7 +9,6 @@ COPY tsconfig.node.json /front
 RUN npm install
 COPY . /front
 
-
 RUN npm run build
 
 EXPOSE 4173

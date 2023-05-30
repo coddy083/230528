@@ -50,6 +50,7 @@ function App() {
           {gong9.link}
           <div className="list_box_info">
             <p>시작수량 {gong9.start_count.toLocaleString()}</p>
+            <p>현재수량 {gong9.currentCount.toLocaleString()}</p>
             <p style={{backgroundColor: remains < 0 ? "green" : "red"}}>{remains < 0 ? "완료" : `남은수량 ${remains}`}</p>
           </div>
         </div>
